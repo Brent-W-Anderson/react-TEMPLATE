@@ -5,12 +5,11 @@
   "license": "UNLICENSED",
   "private": false,
   "scripts": {
-    "setup": "yarn devDependencies & yarn dependencies",
-    "devDependencies": "yarn add @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript @types/react @types/react-dom babel-loader babel-preset-es2015 copy-webpack-plugin css-loader fork-ts-checker-webpack-plugin node-sass sass-loader style-loader typescript webpack webpack-cli webpack-dev-server --dev",
-    "dependencies": "yarn add react react-dom",
-
-    "start": "yarn build & start http://localhost:3001/ & webpack server",
-    "build": "rimraf dist & webpack",
-    "clean": "rimraf dist"
+    "init:start": "yarn setup:all & yarn dev",
+    "setup:all": "yarn setup:devDependencies & yarn setup:dependencies",
+    "setup:devDependencies": "yarn add @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript @types/react @types/react-dom babel-loader babel-preset-es2015 copy-webpack-plugin css-loader fork-ts-checker-webpack-plugin node-sass sass-loader style-loader typescript webpack webpack-cli webpack-dev-server --dev",
+    "setup:dependencies": "yarn add react react-dom",
+    "dev": "start http://localhost:3001/ | webpack server",
+    "build:dist": "rimraf dist & webpack"
   }
 }
