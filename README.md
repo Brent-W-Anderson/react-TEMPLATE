@@ -21,7 +21,6 @@
 
 <h3> SETUP: </h3>
 
-- once all of the requirements have been met above, simply open up the terminal and run ```yarn setup``` - the template dependencies will be added within the <ins>package.json</ins> and installed within <ins>node_modules</ins>.
+- once all of the requirements have been met above, simply open up the terminal and run ```yarn init:start``` - the template dependencies will be added within the <ins>package.json</ins> and installed within <ins>node_modules</ins>. a local webpack devServer will also start on PORT:3001.
 
-<b><ins>recommended</ins></b> - remove the setup scripts after the project has been initialized - <kbd>setup</kbd>, <kbd>devDependencies</kbd>, & <kbd>dependencies</kbd>
-- local server: ```yarn start``` (default port: 3001) - to view the template within the browser.
+<b><ins>recommended</ins></b> - remove the init/setup scripts after the project has been initialized.
